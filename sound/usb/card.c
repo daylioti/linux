@@ -279,7 +279,7 @@ static int snd_usb_create_streams(struct snd_usb_audio *chip, int ctrlif)
 		}
 
 		// Sennheiser GSP 670: create streams in reverse order
-		if (chip->usb_id == USB_ID(0x1395, 0x0089))	{
+		if (chip->usb_id == USB_ID(0x1395, 0x0300))	{
 			snd_usb_create_stream(chip, ctrlif, 4);
 			snd_usb_create_stream(chip, ctrlif, 2);
 			snd_usb_create_stream(chip, ctrlif, 1);
